@@ -1,4 +1,3 @@
-alert(123);
 (function ($) {
   $.fn.scrollFixd = function ($setting) {
     var scrollFixedItem = this

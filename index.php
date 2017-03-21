@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style/css/style.css">
-    
+    <?php do_action('wp_head');?>
     <title></title>
   </head>
   <body class ="front">
@@ -20,5 +20,6 @@
     </div>
     </div>
     <?php  get_footer(); ?>
+    <?php do_action('wp_footer');?>
   </body>
 </html>
