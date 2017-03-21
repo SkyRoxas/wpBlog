@@ -1,0 +1,17 @@
+.archive_time-line {
+    @include child-margin(60px);
+}
+
+.list-margin_column{
+  >ul{
+    padding: 0px;
+    >li{
+      display: block;
+    }
+  }
+  >*{
+    >*:not(:last-child){
+      margin-bottom: 160px;
+    }
+  }
+}

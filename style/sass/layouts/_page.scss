@@ -1,0 +1,19 @@
+#page {
+    position: relative;
+    overflow: hidden;
+
+    > .first-sidbar {
+        display: flex;
+        align-items: stretch;
+        //first-sidbar
+        > * {
+            display: flex;
+            align-content: stretch;
+        }
+
+        > .col-1 {}
+        > .col-2 {
+            flex: 1;
+        }
+    }
+}
