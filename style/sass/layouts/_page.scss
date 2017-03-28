@@ -5,11 +5,12 @@
     > .first-sidbar {
         display: flex;
         align-items: stretch;
-        max-width: 100%;
+
         //first-sidbar
         > * {
             display: flex;
             align-content: stretch;
+            max-width: 100%;
         }
 
         > .col-1 {}
