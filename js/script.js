@@ -5,7 +5,7 @@
       'begin': '#banner',
       'end': '#footer',
       'breakpoint': 960,
-      'navElement': '#banner'
+      'navElement': '.scrollFixed__nav'
     })
     $('body').scrollStateBar()
 
