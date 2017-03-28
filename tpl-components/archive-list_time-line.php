@@ -1,8 +1,7 @@
 <div class ="archive-list archive-list_time-line">
-  <div class ='scrollFixed__nav'><a href ="javascrpt:;">nav</a></div>
   <h1>最新消息</h1>
   <div class ="list-margin_column">
-  <ul>
+  <ul class = "item-list">
     <?php if(have_posts()) : ?>
       <?php while(have_posts()) : the_post(); ?>
         <li class ="item">

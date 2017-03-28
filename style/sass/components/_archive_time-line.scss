@@ -1,3 +1,10 @@
-.archive-list_time-line{
-//  @include child-margin(80px);
+.archive-list_time-line {
+    //  @include child-margin(80px);
+
+    ul.item-list {
+        border-top: 4px solid #98ACC0;
+        display: block;
+        padding: 160px 0px;
+        box-sizing: border-box;
+    }
 }

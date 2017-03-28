@@ -27,12 +27,14 @@ function add_scripts() {
   wp_register_script('scrollFixed', get_template_directory_uri() . '/js/plugins/scrollFixed.js', array('jquery'),'1.7');
   wp_register_script('scrollState', get_template_directory_uri() . '/js/plugins/scrollState.js',array('jquery'),'1.7');
   wp_register_script('ScrollbarFaker', get_template_directory_uri() . '/js/plugins/scrollbarFaker.js',array('jquery'),'1.7');
-  wp_register_script('ScrollbarFaker', get_template_directory_uri() . '/js/plugins/lineAnimate.js',array('jquery'),'1.7');
+  wp_register_script('lineAnimate', get_template_directory_uri() . '/js/plugins/lineAnimate.js',array('jquery'),'1.7');
+  wp_register_script('topAnimate', get_template_directory_uri() . '/js/plugins/topAnimate.js',array('jquery'),'1.7');
 
   wp_enqueue_script('scrollFixed');
   wp_enqueue_script('scrollState');
   wp_enqueue_script('ScrollbarFaker');
   wp_enqueue_script('lineAnimate');
+  wp_enqueue_script('topAnimate');
 
 
   //scripts

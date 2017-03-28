@@ -16,6 +16,7 @@
           <?php get_sidebar('first'); ?>
         </div>
         <div class ="col col-2">
+          <div class ='scrollFixed__nav'><a href ="javascrpt:;">nav</a></div>
           <?php get_template_part( 'tpl/content-archive' ); ?>
         </div>
     </div>

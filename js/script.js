@@ -7,8 +7,23 @@
       'breakpoint': 960,
       'navElement': '.scrollFixed__nav'
     })
+    // scrollStateBar plugin
     $('body').scrollStateBar()
 
+    // scrollbarFaker plugin
     $('#sidebar').scrollbarFaker()
+
+    // lineAnimate plugin
+    $('.archive-list_time-line').find('ul').lineAnimate({
+      'positionElement': '.postdate',
+      'color': '#98ACC0'
+    })
+
+    // topAnimate plugin
+    $('.scrollFixed__nav').topAnimate({
+      'direction': 'left',
+      'row': 50,
+      'column': 300
+    })
   })
 })(jQuery)
