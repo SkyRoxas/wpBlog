@@ -4,4 +4,14 @@
   display: block;
   box-sizing: border-box;
   border-right: 1px solid #EAEAEA;
+  &:after{
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 3px;
+    background: #EAEAEA;
+  }
 }

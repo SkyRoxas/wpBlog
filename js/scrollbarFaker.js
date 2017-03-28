@@ -8,15 +8,16 @@
     // settings item
     var $bold = $setting.bold
     var $color = $setting.color
+    var $background = $setting.background
 
     // default settings
-    $bold || ($bold = '4px')
-    $color || ($bold = 'rgba(229,229,229,0.8)')
+    $bold || ($bold = '3px')
+    $color || ($color = '#98ACC0')
+    $background || ($background = 'rgba(0,0,0,0.1)')
 
     // Architecture
     var scrollbarFaker = 'scrollbarFaker'
-    fnSelect.append('<div class ="' + scrollbarFaker + '"><div class ="nav"></div></div>')
-    var scrollbarFakerSelect = $('.' + scrollbarFaker)
+    fnSelect.append('<div class ="' + scrollbarFaker + '"><div style ="position:relative"><div class ="nav"></div></div></div>')
 
     // clip origin scrollbar
     function clipEvent () {
@@ -30,27 +31,46 @@
 
     // default event
     function defaultEvent () {
-      fnSelect.find('.' + scrollbarFaker).css({
-        'position': 'absolute',
-        'right': '0',
-        'top': fnSelect.scrollTop(),
-        'display': 'block',
-        'width': $bold,
-        'height': fnSelect.innerHeight(),
-        'background': $color
-      })
+      if (fnSelect.outerHeight() > fnSelect[0].scrollHeight) {
+        fnSelect.find('.' + scrollbarFaker).css({
+          'position': 'absolute',
+          'right': '0',
+          'top': fnSelect.scrollTop(),
+          'display': 'block',
+          'height': fnSelect.outerHeight()
+        })
 
-      fnSelect.find('.' + scrollbarFaker).children().css({
-        'position': 'relative',
-        'display': 'block',
-        'width': $bold,
-        'height': '100%',
-        'right': $bold
-      })
+        fnSelect.find('.' + scrollbarFaker).children().css({
+          'position': 'relative',
+          'display': 'block',
+          'width': $bold,
+          'height': '100%',
+          'right': '0',
+          'background': $background
+        })
+        fnSelect.find('.' + scrollbarFaker).children().children().css({
+          'position': 'absolute',
+          'right': '0',
+          'top': (fnSelect.outerHeight() / fnSelect[0].scrollHeight) * fnSelect.scrollTop(),
+          'display': 'block',
+          'width': $bold,
+          'height': (fnSelect.outerHeight() / fnSelect[0].scrollHeight) * 100 + '%',
+          'background': $color
+        })
+      }
     }
 
-    // scroll event
-    function scrollEvent () {}
-    defaultEvent()
+    // set up function
+    $(document).ready(function () {
+      clipEvent()
+      defaultEvent()
+    })
+    $(window).resize(function () {
+      clipEvent()
+      defaultEvent()
+    })
+    fnSelect.scroll(function () {
+      defaultEvent()
+    })
   }
 })(jQuery)

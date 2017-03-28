@@ -4,8 +4,8 @@
     $('#sidebar').scrollFixed({
       'begin': '#banner',
       'end': '#footer',
-      'breakpoint': 760,
-      'navElement': '#content'
+      'breakpoint': 960,
+      'navElement': '#banner'
     })
     $('body').scrollStateBar()
 

@@ -1,7 +1,10 @@
 #content {
-    box-sizing: border-box;
-    padding: 40px 80px;
-    display: block;
-    width: 100%;
-    background: #ffffff;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  background: #ffffff;
+  padding: 40px 80px;
+  @include rwd-screen(phone){
+      padding: 40px;
+    }
 }

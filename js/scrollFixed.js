@@ -65,7 +65,6 @@
     // resize event
     function resizeEvent () {
       scrollFixedItemSelect.parent().css({
-        'z-index': -500,
         'display': 'block',
         'width': function () {
           if (breakpoint) {

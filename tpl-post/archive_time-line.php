@@ -1,22 +1,58 @@
 <div class ="article archive_time-line">
   <div class ="row">
 
+
+    <?php
+
+    $calendar_sort;
+    $calendar_layout;
+    $calendar_column;
+
+    $calendar_column = 'row';
+    $calendar_layout = 'middle-xs';
+    $calendar_sort;
+
+    if ($wp_query->current_post % 2 == 0):
+        //odd class
+    else:
+        //even class
+    endif
+
+    ?>
+
+    <div class ="wrapper <?php echo $calendar_column.' '.$calendar_sort.' '.$calendar_layout?>">
+      <div class ="article-field postdate calendar_mode-1">
+        <div class ="wrapper">
+          <div class ="year" style ="display:none"><?php the_time('Y'); ?></div>
+          <div class ="month"><?php the_time('F'); ?></div>
+          <div class ="date"><?php the_time('j'); ?></div>
+        </div>
+      </div>
+    </div>
+
+
   <?php
 
-  $classWrapper_1;
+  $another_sort;
+  $another_layout;
+  $another_column;
+
+  $another_column = 'row col-xs';
+  $another_layout = 'middle-xs';
 
   if ($wp_query->current_post % 2 == 0):
       //odd class
-      $classWrapper_1 = 'first-lg first-md end-xs';
+      $another_sort = 'first-lg';
+      $another_layout = 'end-lg middle-xs';
   else:
       //even class
-      $classWrapper_1 = 'last-lg last-md';
+      $another_sort = 'last-lg';
+      $another_layout = 'middle-xs';
   endif
 
   ?>
 
-
-  <div class ="wrapper col-xs row middle-xs <?php echo $classWrapper_1?>">
+  <div class ="wrapper <?php echo $another_column.' '.$another_sort.' '.$another_layout?>">
 
     <div class ="article-field avatar">
       <?php  echo get_avatar(); ?>
@@ -25,29 +61,32 @@
   </div>
 
 
-  <div class ="wrapper row middle-xs">
-    <div class ="article-field postdate calendar_mode-1">
-      <div class ="wrapper">
-        <div class ="year" style ="display:none"><?php the_time('Y'); ?></div>
-        <div class ="month"><?php the_time('F'); ?></div>
-        <div class ="date"><?php the_time('j'); ?></div>
-      </div>
-    </div>
-  </div>
+
+
 
 
   <?php
-    $classWrapper_2;
-    if ($wp_query->current_post % 2 == 0):
+
+  $content_sort;
+  $content_layout;
+  $content_column;
+
+  $content_column = 'row col-lg col-xs-12';
+  $content_layout = 'middle-xs';
+
+  if ($wp_query->current_post % 2 == 0):
       //odd class
-      $classWrapper_2 = 'last-lg last-md';
-    else:
+      $content_sort;
+      $content_layout = 'middle-xs start-xs';
+  else:
       //even class
-      $classWrapper_2 = 'first-lg first-md';
-    endif
+      $content_sort = 'first-lg';
+      $content_layout;
+  endif
+
   ?>
 
-  <div class ="wrapper col-xs border-mode-1 <?php echo $classWrapper_2?>">
+  <div class ="wrapper border-mode-1 <?php echo $content_column.' '.$content_sort.' '.$content_layout?>">
     <div>
       <div class ="article-field title">
         <a href ="<?php the_permalink() ?>">
