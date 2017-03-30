@@ -5,6 +5,6 @@
   background: #ffffff;
   padding: 40px 80px;
   @include rwd-screen(small-pad,phone){
-      padding: 40px;
+      padding: 25px;
     }
 }

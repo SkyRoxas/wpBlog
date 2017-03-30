@@ -4,7 +4,12 @@
     ul.item-list {
         border-top: 4px solid #98ACC0;
         display: block;
-        padding: 160px 0px;
         box-sizing: border-box;
+        @include rwd-screen(pc,pad){
+          padding: 160px 0px;
+        }
+        @include rwd-screen(small-pad,phone){
+          padding: 80px 0px;
+        }
     }
 }

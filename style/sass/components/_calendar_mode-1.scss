@@ -1,7 +1,6 @@
 .calendar_mode-1 {
     position: relative;
     display: block;
-    width: 100px;
 
     &:after {
         content: "";
@@ -19,7 +18,16 @@
     .wrapper {
         position: relative;
         z-index: 2;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        @include rwd-screen(pc,small-pad) {
+            width: 100px;
+            height: 100px;
+        }
+        @include rwd-screen(phone) {
+            width: 70px;
+            height: 70px;
+        }
 
         .month {
             display: block;
@@ -42,13 +50,18 @@
         }
 
         .date {
-            text-align: center;
-            padding: 20px 10px;
+            flex: 1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background: #ffffff;
             color: #98ACC0;
             font-size: 25px;
             border: 1px solid #e8e9eb;
             border-top: none;
+            box-sizing: border-box;
+            padding: 10px;
         }
     }
 }
