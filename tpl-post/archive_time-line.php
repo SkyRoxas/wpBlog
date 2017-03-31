@@ -98,7 +98,6 @@
       <div class ="article-field excerpt">
         <hr>
         <?php the_excerpt(); ?>
-        <hr>
       </div>
     </div>
   </div>
