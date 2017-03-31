@@ -3,6 +3,11 @@
     @include rwd-screen(pad,phone) {
          @include child-margin(30px,20px);
     };
+    .article-field.avatar{
+      img{
+        @include rwd-coding(max-width,auto,120px,80px,60px);
+      }
+    }
 }
 
 .list-margin_column {
