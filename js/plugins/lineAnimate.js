@@ -40,7 +40,8 @@
     }
 
     function linePosition () {
-      if (positionElement) {
+      // prevent position.left undifind
+      if (positionElement && $(positionElement).length > 0) {
         fnSelect.find('.' + lineElement).css({
           'left': (($(positionElement).position().left + ($(positionElement).innerWidth()) / 2) / fnSelect.innerWidth()) * 100 + '%',
           'transform': 'translate(-50%, 0%)'

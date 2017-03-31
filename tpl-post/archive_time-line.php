@@ -55,7 +55,7 @@
   <div class ="wrapper <?php echo $another_column.' '.$another_sort.' '.$another_layout?>">
 
     <div class ="article-field avatar">
-      <?php echo get_avatar(get_the_author_meta('ID'), 130);?>
+      <?php echo get_avatar(get_the_author_meta('ID'), 165);?>
     </div>
 
   </div>

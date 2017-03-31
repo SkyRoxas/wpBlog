@@ -22,8 +22,14 @@
     // topAnimate plugin
     $('.scrollFixed__nav').topAnimate({
       'direction': 'left',
-      'row': 50,
-      'column': 300
+      'row': 10,
+      'column': function () {
+        if ($(window).width() > 960) {
+          return 200
+        } else {
+          return 150
+        }
+      }
     })
   })
 })(jQuery)

@@ -1,0 +1,41 @@
+@keyframes bounce {
+    0%,100%,20%,50%,80% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.nav-button_arrow-right {
+  animation: bounce 3s infinite;
+    display: block;
+    padding: 5px;
+    border-radius: 50%;
+    background: #98ACC0;
+    opacity: 0.3;
+    transition: 0.3s;
+
+    &:after {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        content: ">";
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 50%;
+        font-weight: bold;
+        background: #ffffff;
+        color: #98ACC0;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
