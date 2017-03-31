@@ -16,7 +16,7 @@
     // lineAnimate plugin
     $('.archive-list_time-line').find('ul').lineAnimate({
       'positionElement': '.postdate',
-      'color': '#98ACC0'
+      'color': '#4183C4'
     })
 
     // topAnimate plugin

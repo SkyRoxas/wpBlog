@@ -89,9 +89,11 @@
   <div class ="wrapper border-mode-1 <?php echo $content_column.' '.$content_sort.' '.$content_layout?>">
     <div>
       <div class ="article-field title">
-        <a href ="<?php the_permalink() ?>">
-          <h3><?php the_title(); ?></h3>
-        </a>
+        <h3>
+          <a href ="<?php the_permalink() ?>">
+            <?php the_title(); ?>
+          </a>
+        </h3>
       </div>
       <div class ="article-field excerpt">
         <hr>

@@ -3,8 +3,8 @@ body {
     color: #444444;
 }
 
-p{
-  line-height: 2em;
+p {
+    line-height: 2em;
 }
 
 h1,
@@ -23,8 +23,6 @@ h4,
 h5 {
     font-family: Georgia, Palatino, serif;
 }
-
-
 
 h1 {
     @include rwd-screen(pc,pad) {
@@ -54,8 +52,8 @@ h2 {
     padding-bottom: 10px;
 }
 
-
 h3 {
+    font-weight: bold;
     @include rwd-screen(pc,pad) {
         font-size: 24px;
     }
@@ -87,10 +85,11 @@ h5 {
 }
 
 a {
-    color: #6684A3;
+    color: #4183C4;
     opacity: 1;
-    &:hover{
-    opacity: 0.5;
+
+    &:hover {
+        opacity: 0.5;
     }
 }
 

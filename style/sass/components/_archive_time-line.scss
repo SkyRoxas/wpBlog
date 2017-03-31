@@ -2,7 +2,7 @@
     //  @include child-margin(80px);
 
     ul.item-list {
-        border-top: 4px solid #98ACC0;
+        border-top: 4px solid #4183C4;
         display: block;
         box-sizing: border-box;
         @include rwd-screen(pc,pad){
