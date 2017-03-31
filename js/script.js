@@ -23,13 +23,7 @@
     $('.scrollFixed__nav').topAnimate({
       'direction': 'left',
       'row': 10,
-      'column': function () {
-        if ($(window).width() > 960) {
-          return 200
-        } else {
-          return 150
-        }
-      }
+      'column': 150
     })
   })
 })(jQuery)
