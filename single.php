@@ -7,7 +7,7 @@
     <?php do_action('wp_head');?>
     <title></title>
   </head>
-  <body class ="front">
+  <body class ="not-front">
     <?php  get_header(); ?>
     <?php get_template_part('tpl/banner') ?>
     <div id ="page" class ="region">

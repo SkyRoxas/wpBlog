@@ -16,7 +16,8 @@
     // lineAnimate plugin
     $('.archive-list_time-line').find('ul').lineAnimate({
       'positionElement': '.postdate',
-      'color': '#4183C4'
+      'color': '#4183C4',
+      'transition': '0.8s'
     })
 
     // topAnimate plugin
@@ -25,5 +26,21 @@
       'row': 10,
       'column': 150
     })
+
+    // scrollClass
+    // $('.article-wrapper.postdate').scrollClass({
+    //   'className': 'test',
+    //   'delay': 200
+    // })
+    //
+    // $('.article-wrapper.avatar').scrollClass({
+    //   'className': 'test',
+    //   'delay': 500
+    // })
+    //
+    // $('.article-wrapper.body').scrollClass({
+    //   'className': 'test',
+    //   'delay': 700
+    // })
   })
 })(jQuery)

@@ -20,7 +20,7 @@
 
     ?>
 
-    <div class ="wrapper <?php echo $calendar_column.' '.$calendar_sort.' '.$calendar_layout?>">
+    <div class ="article-wrapper postdate <?php echo $calendar_column.' '.$calendar_sort.' '.$calendar_layout?>">
       <div class ="article-field postdate calendar_mode-1">
         <div class ="wrapper">
           <div class ="year" style ="display:none"><?php the_time('Y'); ?></div>
@@ -52,16 +52,13 @@
 
   ?>
 
-  <div class ="wrapper <?php echo $another_column.' '.$another_sort.' '.$another_layout?>">
+  <div class ="article-wrapper avatar <?php echo $another_column.' '.$another_sort.' '.$another_layout?>">
 
     <div class ="article-field avatar">
       <?php echo get_avatar(get_the_author_meta('ID'), 165);?>
     </div>
 
   </div>
-
-
-
 
 
 
@@ -86,7 +83,7 @@
 
   ?>
 
-  <div class ="wrapper border-mode-1 <?php echo $content_column.' '.$content_sort.' '.$content_layout?>">
+  <div class ="article-wrapper body border-mode-1 <?php echo $content_column.' '.$content_sort.' '.$content_layout?>">
     <div>
       <div class ="article-field title">
         <h3>

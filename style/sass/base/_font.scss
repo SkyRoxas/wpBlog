@@ -36,6 +36,7 @@ h1 {
 }
 
 h2 {
+  margin-top:1.5em;
     @include rwd-screen(pc,pad) {
         font-size: 36px;
         line-height: 52px;
@@ -46,11 +47,7 @@ h2 {
     }
 }
 
-h1,
-h2 {
-    border-bottom: 1px solid #EFEAEA;
-    padding-bottom: 10px;
-}
+
 
 h3 {
     font-weight: bold;

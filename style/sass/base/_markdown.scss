@@ -10,11 +10,17 @@ article {
     }
 
     h1 {
-        font-size: 38px;
+        @include rwd-coding(font-size,38px,38px,38px,38px);
         line-height: 1.7em;
     }
 
     h2 {
+        @include rwd-coding(font-size,28px,28px,28px,28px);
+        font-size: 28px;
+    }
+
+    h3 {
+        @include rwd-coding(font-size,22px,22px,22px,22px);
         font-size: 28px;
     }
 

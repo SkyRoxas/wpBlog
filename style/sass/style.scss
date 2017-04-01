@@ -21,3 +21,12 @@
         }
     }
 }
+
+.article-wrapper.postdate,.article-wrapper.avatar,.article-wrapper.body{
+  transition: 0.6s;
+  opacity: 0;
+}
+
+.test{
+  opacity: 1!important;
+}
