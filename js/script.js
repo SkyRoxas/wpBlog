@@ -31,17 +31,17 @@
     setTimeout(function () {
       $('.article-wrapper.avatar').scrollClass({
         'className': 'animate_right',
-        'delay': 500,
+        'delay': 350,
       })
 
       $('.article-wrapper.body').scrollClass({
         'className': 'animate_left',
-        'delay': 700
+        'delay': 450
       })
 
       $('.article-wrapper.postdate').scrollClass({
         'className': 'animate_fadeIn',
-        'delay': 300
+        'delay': 150
       })
     }, 700)
   })
