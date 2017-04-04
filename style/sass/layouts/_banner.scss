@@ -1,0 +1,9 @@
+#banner {
+    img.bannerImg_lg {
+        @include rwd-coding(display,block,block,none,none);
+    }
+
+    img.bannerImg_sm {
+        @include rwd-coding(display,none,none,block,block);
+    }
+}

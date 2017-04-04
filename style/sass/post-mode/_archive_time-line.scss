@@ -5,7 +5,8 @@
     };
     .article-field.avatar{
       img{
-        @include rwd-coding(max-width,auto,120px,80px,60px);
+        border-radius: 50%;
+        @include rwd-coding(max-width,auto,120px,80px,70px);
       }
     }
 }

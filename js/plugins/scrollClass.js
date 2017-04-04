@@ -8,9 +8,11 @@
     // setting item
     var className = $setting.className
     var delay = $setting.delay
+    var increment = $setting.increment
 
     // default setting
     delay || (delay = 0)
+    increment || (increment = 'on')
 
     // global variable
 
@@ -19,15 +21,22 @@
       fnSelect.each(function (index) {
         var eachSelect = $(this)
         var scrollPosition = eachSelect.offset().top
-
-        if ($(window).scrollTop() > scrollPosition - $(window).height() && $(window).scrollTop() < scrollPosition + eachSelect.innerHeight()) {
-          setTimeout(function () {
-            eachSelect.addClass(className)
-          }, delay * timer++)
-        } else if ($(window).scrollTop() > scrollPosition - $(window).height()) {
-          setTimeout(function () {
-            eachSelect.addClass(className)
-          }, delay)
+        if (increment === 'on') {
+          if ($(window).scrollTop() > scrollPosition - $(window).height() && $(window).scrollTop() < scrollPosition + eachSelect.innerHeight()) {
+            setTimeout(function () {
+              eachSelect.addClass(className)
+            }, delay * timer++)
+          } else if ($(window).scrollTop() > scrollPosition - $(window).height()) {
+            setTimeout(function () {
+              eachSelect.addClass(className)
+            }, delay)
+          }
+        } else {
+          if ($(window).scrollTop() > scrollPosition - $(window).height()) {
+            setTimeout(function () {
+              eachSelect.addClass(className)
+            }, delay)
+          }
         }
       })
     }

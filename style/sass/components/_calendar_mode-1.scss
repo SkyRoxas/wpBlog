@@ -22,11 +22,11 @@
         flex-direction: column;
         @include rwd-screen(pc,small-pad) {
             width: 100px;
-            height: 100px;
+            min-height: 100px;
         }
         @include rwd-screen(phone) {
             width: 70px;
-            height: 70px;
+            min-height: 70px;
         }
 
         .month {
