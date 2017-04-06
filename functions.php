@@ -44,7 +44,13 @@ function add_scripts() {
   wp_enqueue_script('script');
 }
 
-add_action( 'wp_enqueue_scripts', 'add_scripts' );
+  add_action( 'wp_enqueue_scripts', 'add_scripts' );
+
+  // 建立外觀頁首
+  add_theme_support( 'custom-header' );
+  add_theme_support('custom-background');
+
+  
 
 
 ?>

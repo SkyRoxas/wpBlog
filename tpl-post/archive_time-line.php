@@ -1,7 +1,5 @@
 <div class ="article archive_time-line">
   <div class ="row">
-
-
     <?php
 
     $calendar_sort;
@@ -98,6 +96,7 @@
       </div>
     </div>
   </div>
+
 
   <!--
     <?php if ( has_post_thumbnail()):?>

@@ -29,20 +29,28 @@
 
         // scrollClass
     setTimeout(function () {
-      $('.article-wrapper.avatar').scrollClass({
-        'className': 'animate_right',
-        'delay': 350,
-      })
-
-      $('.article-wrapper.body').scrollClass({
-        'className': 'animate_left',
-        'delay': 450
-      })
-
-      $('.article-wrapper.postdate').scrollClass({
-        'className': 'animate_fadeIn',
-        'delay': 150
-      })
+      scrollClassSet()
     }, 700)
   })
+
+  $(document).ajaxComplete(function () {
+    scrollClassSet()
+  })
+
+  function scrollClassSet () {
+    $('.article-wrapper.avatar').scrollClass({
+      'className': 'animate_right',
+      'delay': 350
+    })
+
+    $('.article-wrapper.body').scrollClass({
+      'className': 'animate_left',
+      'delay': 450
+    })
+
+    $('.article-wrapper.postdate').scrollClass({
+      'className': 'animate_fadeIn',
+      'delay': 150
+    })
+  }
 })(jQuery)
