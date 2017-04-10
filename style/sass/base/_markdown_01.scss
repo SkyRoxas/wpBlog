@@ -31,10 +31,11 @@ body {
 
 body {
   margin: 0;
-  font: 100%/1.5 AvenirNext-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Corbel, "Lucida Grande", "Trebuchet Ms", sans-serif;
+  //font: 100%/1.5 AvenirNext-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Corbel, "Lucida Grande", "Trebuchet Ms", sans-serif;
   color: #111;
   min-height: 100%;
   box-sizing: border-box;
+  font-family: "source-han-sans-traditional",sans-serif;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {

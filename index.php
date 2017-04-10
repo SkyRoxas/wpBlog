@@ -7,6 +7,8 @@
     <?php do_action('wp_head');?>
     <title></title>
   </head>
+  <script src="https://use.typekit.net/znw8cer.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <body class ="front">
     <?php  get_header(); ?>
     <?php get_template_part('tpl/banner') ?>
