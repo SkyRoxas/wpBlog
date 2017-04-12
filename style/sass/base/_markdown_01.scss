@@ -45,6 +45,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 h2, h3, h4, h5, h6, p, blockquote, pre, dl, ol, form, table, figure, nav, hr  {
   margin-top: 3rem;
 }
+h2{
+  margin-top: 5rem;
+}
 
 audio, canvas, progress, video, label {
   display: inline-block;
@@ -161,11 +164,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.4rem;
+  color: #222;
 }
 
 h3 {
@@ -199,8 +203,9 @@ dd {
 p {
   margin: 0;
   margin-top: 1.5em;
+  color: #444;
   padding: .5em 0;
-  font-size: 1.3em;
+  font-size: 1.4rem;
 }
 
 h3 + p,
@@ -343,6 +348,8 @@ blockquote {
   color: #666;
   font-family: AvenirNext-Italic, Avenir-Oblique, AvenirMedium-Oblique, Georgia, serif;
   font-style: italic;
+  margin-left: 0px;
+  margin-right: 0px;
   >*:first-child{
     margin-top: 0px;
   }
