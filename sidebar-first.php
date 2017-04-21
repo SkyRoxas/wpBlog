@@ -1,3 +1,3 @@
 <div id = "sidebar">
-  <?php get_template_part('tpl-components/block_search-block') ?>
+  <?php dynamic_sidebar( 'home_right_1' ); ?>
 </div>
