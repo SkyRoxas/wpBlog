@@ -1,0 +1,32 @@
+.header-menu {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 67px;
+    border-top: 2px solid #ccc;
+    //border-bottom: 1px solid #ccc;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        overflow-x: scroll;
+
+        li {
+            display: block;
+
+            a {
+                display: block;
+                box-sizing: border-box;
+                padding: 20px;
+                white-space: nowrap;
+                font-size: 18px;
+                @include rwd-screen(phone) {
+                    padding: 20px 0;
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}

@@ -38,7 +38,6 @@ function add_scripts() {
   wp_enqueue_script('topAnimate');
   wp_enqueue_script('scrollClass');
 
-
   //scripts
   wp_register_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'),'1.7');
   wp_enqueue_script('script');
@@ -50,7 +49,20 @@ function add_scripts() {
   add_theme_support( 'custom-header' );
   add_theme_support('custom-background');
 
-  
+
+  //註冊選單區域
+  function register_my_menu() {
+
+    register_nav_menus(
+      array(
+        'header-menu' => __( 'Header Menu' ),
+        'extra-menu' => __( 'Footer Menu' )
+      )
+    );
+  }
+  add_action( 'init', 'register_my_menu' );
+
+
 
 
 ?>
