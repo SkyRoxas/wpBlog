@@ -2,7 +2,7 @@
 
 //add post-thumbnails
 
-add_theme_support( 'post-thumbnails', array( 'post' ) );
+add_theme_support( 'post-thumbnails', array( 'post','page' ) );
 
 
 //article excerpt
@@ -76,7 +76,7 @@ function add_scripts() {
 
   }
   add_action( 'widgets_init', 'arphabet_widgets_init' );
-  
+
 
 
 ?>
