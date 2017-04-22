@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style/css/style.css">
     <?php do_action('wp_head');?>
-    <title></title>
+    <title><?php wp_title(''); ?></title>
   </head>
   <script src="https://use.typekit.net/znw8cer.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
