@@ -46,7 +46,8 @@
         'height': '100%',
         'right': '0',
         'background': $background,
-        'z-index': 500
+        'z-index': '1'
+
       })
       fnSelect.find('.' + scrollbarFaker).children().children().css({
         'position': 'absolute',
@@ -56,6 +57,7 @@
         'width': $bold,
         'height': (fnSelect.outerHeight() / fnSelect[0].scrollHeight) * 100 + '%',
         'background': $color
+
       })
     }
 

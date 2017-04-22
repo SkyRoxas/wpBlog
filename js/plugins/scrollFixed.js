@@ -106,6 +106,7 @@
         '$style': function () {
           navTriggerElementSelect.css({
             'position': 'relative',
+            'z-index': '1',
             'left': 0,
             'transition': '0.5s'
           })
