@@ -8,7 +8,7 @@
             <?php get_template_part('tpl-post/archive_time-line') ?>
         </li>
       <?php endwhile; ?>
-        <?php  echo do_shortcode('[ajax_load_more container_type="ul" post_type="post" offset= '.$count.' transition_container="false" previous_post="true" posts_per_page="10"]');?>
+        
     <?php endif; ?>
   </ul>
 </div>
