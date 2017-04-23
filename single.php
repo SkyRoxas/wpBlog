@@ -13,6 +13,11 @@
     <?php  get_header(); ?>
     <?php get_template_part('tpl/banner') ?>
     <div id ="page" class ="region">
+        if ( function_exists('yoast_breadcrumb') ) {
+yoast_breadcrumb('
+<p id="breadcrumbs">','</p>
+');
+}
       <div class ="region-wrapper first-sidbar">
         <div class ="col col-1">
           <?php get_sidebar('first'); ?>
