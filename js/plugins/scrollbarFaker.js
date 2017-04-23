@@ -11,8 +11,8 @@
     var $background = $setting.background
 
     // default settings
-    $bold || ($bold = '3px')
-    $color || ($color = '#98ACC0')
+    $bold || ($bold = '5px')
+    $color || ($color = '#4183C4')
     $background || ($background = 'rgba(0,0,0,0.1)')
 
     // Architecture
@@ -31,33 +31,34 @@
 
     // default event
     function defaultEvent () {
-      if (fnSelect.outerHeight() > fnSelect[0].scrollHeight) {
-        fnSelect.find('.' + scrollbarFaker).css({
-          'position': 'absolute',
-          'right': '0',
-          'top': fnSelect.scrollTop(),
-          'display': 'block',
-          'height': fnSelect.outerHeight()
-        })
+      fnSelect.find('.' + scrollbarFaker).css({
+        'position': 'absolute',
+        'right': '0',
+        'top': fnSelect.scrollTop(),
+        'display': 'block',
+        'height': fnSelect.outerHeight()
+      })
 
-        fnSelect.find('.' + scrollbarFaker).children().css({
-          'position': 'relative',
-          'display': 'block',
-          'width': $bold,
-          'height': '100%',
-          'right': '0',
-          'background': $background
-        })
-        fnSelect.find('.' + scrollbarFaker).children().children().css({
-          'position': 'absolute',
-          'right': '0',
-          'top': (fnSelect.outerHeight() / fnSelect[0].scrollHeight) * fnSelect.scrollTop(),
-          'display': 'block',
-          'width': $bold,
-          'height': (fnSelect.outerHeight() / fnSelect[0].scrollHeight) * 100 + '%',
-          'background': $color
-        })
-      }
+      fnSelect.find('.' + scrollbarFaker).children().css({
+        'position': 'relative',
+        'display': 'block',
+        'width': $bold,
+        'height': '100%',
+        'right': '0',
+        'background': $background,
+        'z-index': '1'
+
+      })
+      fnSelect.find('.' + scrollbarFaker).children().children().css({
+        'position': 'absolute',
+        'right': '0',
+        'top': (fnSelect.outerHeight() / fnSelect[0].scrollHeight) * fnSelect.scrollTop(),
+        'display': 'block',
+        'width': $bold,
+        'height': (fnSelect.outerHeight() / fnSelect[0].scrollHeight) * 100 + '%',
+        'background': $color
+
+      })
     }
 
     // set up function
