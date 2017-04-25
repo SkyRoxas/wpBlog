@@ -51,13 +51,19 @@
 }
 
 .article-wrapper.avatar {
-    @include animate_right;
+    @include rwd-screen(pc,pad) {
+         @include animate_right;
+    }
 }
 
 .article-wrapper.body {
-    @include animate_left;
+    @include rwd-screen(pc,pad) {
+         @include animate_left;
+    }
 }
 
 .article-wrapper.postdate {
-    @include animate_fadeIn;
+    @include rwd-screen(pc,pad) {
+         @include animate_fadeIn;
+    }
 }
