@@ -1,6 +1,11 @@
 <?php if(have_posts()) : ?>
   <?php while(have_posts()) : the_post(); ?>
     <article>
+        <?php
+if ( function_exists('yoast_breadcrumb') ) {
+yoast_breadcrumb('<div id="breadcrumbs">','</div>');
+}
+?>
       <div class ="article-field title">
         <h1><?php the_title(); ?></h1>
       </div>
