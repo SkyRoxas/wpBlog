@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <?php  get_header(); ?>
+<?php  get_header(); ?>
     <div id ="page" class ="region">
       <div class ="region-wrapper first-sidbar">
         <div class ="col col-1">
@@ -12,5 +10,4 @@
         </div>
     </div>
     </div>
-    <?php  get_footer(); ?>
-</html>
+<?php  get_footer(); ?>
