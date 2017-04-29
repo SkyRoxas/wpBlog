@@ -1,5 +1,5 @@
 <div class ="archive-list archive-list_time-line">
-  <h1>最新消息</h1>
+  <?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
   <div class ="list-margin_column">
   <ul class = "item-list">
     <?php if(have_posts()) : $count = 0 ?>
