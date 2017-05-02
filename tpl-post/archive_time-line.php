@@ -53,7 +53,9 @@
   <div class ="article-wrapper avatar <?php echo $another_column.' '.$another_sort.' '.$another_layout?>">
 
     <div class ="article-field avatar">
+        <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
       <?php echo get_avatar(get_the_author_meta('ID'), 165);?>
+      </a>
     </div>
 
   </div>
